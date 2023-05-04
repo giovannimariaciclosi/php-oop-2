@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .card {
+    width: calc(100% / 3 - 2 * 10px);
+    
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 10px;
+    }
+  }
+}

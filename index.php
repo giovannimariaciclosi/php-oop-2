@@ -45,7 +45,10 @@ require_once './db.php';
         <img class="card-image" src="<?= $SignleProduct->image ?>" alt="image">
           <div class="card-text">
             <h3 class="card-title"><?= $SignleProduct->name ?></h3>
-            <strong class="card-category"><?= "Category: " . $SignleProduct->category ?></strong>
+            <div class="card-category-container">
+              <strong class="card-category"><?= "Category: " . $SignleProduct->category ?></strong>
+              <i class="<?= $SignleProduct::$icon ?>"></i>
+            </div>
             <p class="card-subtitle"><?= $SignleProduct->description ?></p>
             <strong class="card-price">Price: <?= $SignleProduct->getPrice() ?></strong>
             <button class="btn btn-primary">Buy Now</button>

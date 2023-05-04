@@ -21,10 +21,10 @@ class Product {
   }
 
   public function getCategoryIcon() {
-    if($this->category = "Dog") {
+    if($this->category == "Dog") {
       return "<i class='fa-solid fa-dog'></i>";
 
-    } elseif($this->category = "Cat") {
+    } elseif($this->category == "Cat") {
       return "<i class='fa-solid fa-cat'></i>";
 
     } else {

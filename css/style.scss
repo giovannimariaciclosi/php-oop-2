@@ -9,16 +9,28 @@ h1 {
   flex-wrap: wrap;
   gap: 10px;
   padding-bottom: 50px;
-  
+
+  @media (max-width: 450px) {
+    gap: 20px;
+  }
+
   .card {
     width: calc(100% / 3 - 2 * 10px);
+
+    @media (max-width: 768px) {
+      width: calc(100% / 2 - 10px);
+    }
+
+    @media (max-width: 450px) {
+      width: 100%;
+    }
 
     .card-text {
       display: flex;
       flex-direction: column;
       gap: 5px;
       padding: 10px;
-      
+
       .card-price {
         text-decoration: line-through;
       }
@@ -26,7 +38,6 @@ h1 {
       .card-discounted-price {
         color: red;
       }
-
     }
   }
 }

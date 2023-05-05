@@ -18,6 +18,15 @@ h1 {
       flex-direction: column;
       gap: 5px;
       padding: 10px;
+      
+      .card-price {
+        text-decoration: line-through;
+      }
+
+      .card-discounted-price {
+        color: red;
+      }
+
     }
   }
 }

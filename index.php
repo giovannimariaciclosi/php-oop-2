@@ -52,7 +52,8 @@ require_once './db.php';
               <i class="<?= $SignleProduct::$icon ?>"></i>
             </div>
             <p class="card-subtitle"><?= $SignleProduct->description ?></p>
-            <strong class="card-price">Price: <?= $SignleProduct->getPrice() ?></strong>
+            <div class="card-price">Price: <?= $SignleProduct->getPrice() ?></div>
+            <strong class="card-discounted-price">Discounted Price: <?= $SignleProduct->getDiscountedPrice($SignleProduct->getDiscount()) ?>€</strong>
             <button class="btn btn-primary">Buy Now</button>
           </div>
         </div>

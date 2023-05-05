@@ -2,6 +2,18 @@
 
 require_once './db.php';
 
+
+// provo a settare lo sconto al 99%
+try {
+
+  $brush->setDiscount(99);
+
+} catch (Exception $e) {
+
+  echo $e->getMessage();
+
+}
+
 ?>
 
 <!DOCTYPE html>
